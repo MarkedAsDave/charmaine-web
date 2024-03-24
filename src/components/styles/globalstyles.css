@@ -1,0 +1,154 @@
+\/* globalstyles.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.container {
+    position: relative;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 98.7vw;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+.container {
+    background-color: #ffffff; /* Default light mode background color */
+    color: #333333; /* Default light mode text color */
+    transition: background-color 1s ease-in-out, color 1s ease-in-out;
+}
+
+.container.dark-mode {
+    background-color: #333333;
+    color: #ffffff;
+    transition: background-color 1s ease-in-out, color 1s ease-in-out;
+}
+
+.container.dark-mode h2 {
+   color: #a04ddf;
+}
+
+
+
+.container.dark-mode button{
+    background-color: 8435C2;
+    color: white;
+}
+
+.header{
+    width: 98%;
+    position: fixed; /* Changed from absolute to fixed */
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 8%;
+    justify-content: left;
+    z-index: 999;
+}
+
+.header.dark-mode{
+    background-color: #333333;
+    transition: background-color 1s ease-in-out, color 1s ease-in-out;
+}
+
+.header.light-mode{
+    background-color: white;
+    transition: background-color 1s ease-in-out, color 1s ease-in-out;
+}
+
+
+.header-btn-container{
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    justify-content: left;
+    gap: 3%;
+    font-size: small;
+    margin-left: 10%;
+    height: auto;
+    margin-right: 3%;
+}
+
+.button-s.light-mode{
+    background-color: transparent;
+    color: black;
+    border: 0;
+}
+
+.button-s.light-mode:focus{
+    outline: 0;
+    border-top: 0;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid #FFB800;
+    border-radius: 0;
+    background-color: transparent;
+}
+
+.button-s.light-mode:hover{
+    outline: 0;
+    border-top: 0;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid #FFB800;
+    border-radius: 0;
+    background-color: transparent;
+}
+
+
+.button-s.dark-mode {
+    background-color: transparent; 
+    color: white;
+}
+
+.button-s.dark-mode:focus{
+    outline: 0;
+    border-top: 0;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid #FFB800;
+    border-radius: 0;
+    background-color: transparent;
+}
+
+.button-s.dark-mode:hover{
+    outline: 0;
+    border-top: 0;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid #FFB800;
+    border-radius: 0;
+    background-color: transparent;
+}
+
+.user{
+    font-weight: bold;
+    margin-left: 2%;
+    height: fit-content;
+}
+
+.switch-btn{
+    position: relative;
+    display: flex;
+    align-self: flex;
+    
+}
+
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 100vw; /* Adjust width for smaller screens */
+    }
+}

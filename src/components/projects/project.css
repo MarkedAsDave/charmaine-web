@@ -1,0 +1,90 @@
+.project-container {
+  width: 90vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: transparent;
+  align-items: center;
+}
+
+.text-h2.light-mode {
+  color: black;
+}
+.text-h2.dark-mode {
+  color: #a04ddf;
+}
+.skill-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 95vw;
+  gap: 0;
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  position: inherit;
+  width: 95vw;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  overflow: hidden;
+  gap: 8%;
+}
+
+.horizontal {
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+}
+
+.view-btn {
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+  height: 25vh;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.view-btn img{
+  width: 70%;
+  height: 70%;
+  margin-top: 10px;
+}
+
+.details{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  gap: 15%;
+}
+
+.view-btn.light-mode {
+  color: black;
+  background-color: #d9d9d9;
+}
+
+.view-btn.light-mode:hover {
+  color: white;
+  background-color: #FFB800;
+}
+.view-btn.dark-mode {
+  color: white;
+  border: 2px solid #FFB800;
+}
+
+.view-btn.dark-mode:hover {
+  color: #FFB800;
+  border: 2px solid #d9d9d9;
+}

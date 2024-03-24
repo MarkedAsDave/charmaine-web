@@ -1,0 +1,133 @@
+.about-container{
+    width: 95vw;
+    height: 95vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-container h2{
+    visibility: hidden;
+}
+
+.grid-view{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 6%;
+   
+}
+
+.grid-left{
+    height: 75vh;
+    width: 15%;
+    align-items: flex-start;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    font-weight: bold;
+}
+
+.grid-right{
+    height: 75vh;
+    width: 30%;
+    align-items: flex-start;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vh;
+    gap: 10%;
+    font-weight: bold;
+}
+
+.grid-right p{
+    text-align: justify;
+    opacity: 0; /* Start with opacity 0 */
+    transform: translateX(100px); /* Start position above its final position */
+    animation: slideInFromRight 1.7s ease forwards; /* Apply animation */
+}
+
+@keyframes slideInFromRight {
+  from {
+      opacity: 0;
+      transform: translateX(100px); /* Start from above */
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0); /* End at its final position */
+  }
+}
+
+.grid-center{
+    height: 75vh;
+    width: 3px;
+    background-color: #FFB800;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 17%;
+}
+
+.circle{
+    width: 15px;
+    height: 15px;
+    background-color: #FFB800;
+    border-radius: 100%;
+    opacity: 0; /* Start with opacity 0 */
+    transform: translateY(-50px); /* Start position above its final position */
+    animation: fadeInUp  1.7s ease forwards; /* Apply animation */
+}
+
+@keyframes fadeInUp  {
+  from {
+      opacity: 0;
+      transform: translateY(-50px); /* Start from above */
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0); /* End at its final position */
+  }
+}
+
+.circle.dark-mode{
+    width: 15px;
+    height: 15px;
+    background-color: #FFB800;
+    border-radius: 100%;
+}
+
+.left-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Start with opacity 0 */
+    transform: translateX(-100px); /* Start position above its final position */
+    animation: slideInFromLeft 1.7s ease forwards; /* Apply animation */
+}
+
+@keyframes slideInFromLeft  {
+  from {
+      opacity: 0;
+      transform: translateX(-100px); /* Start from above */
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0); /* End at its final position */
+  }
+}
+
+.image-container{
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+}
+
+.image-container img{
+    width: 3rem;
+    height: 3rem;
+}

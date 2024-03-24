@@ -1,0 +1,281 @@
+.contact-container {
+  width: 95vw;
+  height: 95vh;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2%;
+}
+
+.contact-container h3 {
+  visibility: hidden;
+  height: 10x;
+  margin-bottom: -1vh;
+}
+
+.up {
+  display: flex;
+  flex-direction: row;
+  width: 85vw;
+  height: 30%;
+  text-align: left;
+  align-items: center;
+  gap: 2%;
+}
+
+.up-left {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 95%;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+}
+
+.up-left-content {
+  height: 95%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  justify-content: left;
+  align-items: center;
+}
+
+.up-left-content.light-mode {
+  background-color: #d9d9d9;
+}
+
+.up-left-content.dark-mode {
+  background-color: transparent;
+  border: 2px solid #FFB800;
+}
+
+.icon-container {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFB800;
+  margin-left: 20px;
+  border-radius: 100%;
+  color: white;
+}
+
+.personal-info {
+  height: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  margin-left: 5%;
+  gap: 20%;
+}
+
+.personal-info-up {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 1rem;
+}
+
+.personal-info-down {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 1rem;
+  gap: 10%;
+}
+
+.personal-info-icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 1rem;
+  gap: 10%;
+}
+
+.a-icons {
+  display: unset;
+}
+.a-icons.light-mode {
+  color: #FFB800;
+}
+
+.a-icons.light-mode:hover {
+  color: black;
+}
+
+
+.a-icons.dark-mode {
+  color: white;
+}
+
+.a-icons.dark-mode:hover {
+  color: #FFB800;
+}
+
+
+.down {
+  display: flex;
+  flex-direction: column;
+  width: 85vw;
+  height: 45%;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.down.light-mode {
+  background-color: #d9d9d9;
+}
+
+.down.dark-mode {
+  border: 2px solid #FFB800;
+}
+
+.name-email{
+  display: flex;
+  flex-direction: row;
+  height: 12%;
+  margin-top: 1.5%;
+  justify-content: center;
+  gap: 1.5%;
+  width: 80vw;
+}
+
+
+.subject{
+  display: flex;
+  flex-direction: row;
+  height: 12%;
+  margin-top: 1%;
+  justify-content: center;
+  width: 80vw;
+}
+
+
+.message{
+  display: flex;
+  flex-direction: row;
+  height: 50%;
+  margin-top: 1%;
+  justify-content: center;
+  width: 80vw;
+}
+
+
+
+.input-fields-message{
+  width: 100%;
+  font-size: small;
+  height: 60%;
+  padding: 10px;
+  border-radius: 7px;
+  border: none;
+}
+
+.input-fields-message.light-mode{
+  background-color: white;
+  color: black;
+}
+
+.input-fields-message.dark-mode{
+  background-color: transparent;
+  color: white;
+  border: 2px solid  #FFB800;;
+}
+
+.input-fields{
+  width: 100%;
+  font-size: small;
+  padding: 10px;
+  border-radius: 7px;
+  border: none;
+}
+
+.input-fields.light-mode{
+  background-color: white;
+  color: black;
+}
+
+.input-fields.dark-mode{
+  background-color: transparent;
+  color: white;
+  border: 2px solid  #FFB800;;
+}
+
+.button-send{
+  background-color:  #FFB800; 
+  width: auto;
+  color: white;
+  font-size: small;
+  margin-top: -3vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10%;
+}
+
+.button-send:focus{
+  outline: 0;
+}
+
+.footer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  bottom: 0;
+  width: 100vw;
+  height: 2%;
+  background-color: #FFB800;
+  justify-content: center;
+  align-items: center;
+  color: #d9d9d9;
+}
+
+
+.error-fullname{
+  position: absolute;
+  width: 20vw;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: red;
+  justify-self: flex-start;
+  text-align: right;
+  margin-right: 30%;
+}
+
+.error-email{
+  position: absolute;
+  width: 20vw;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: red;
+  justify-self: flex-start;
+  text-align: right;
+  margin-left: 52%;
+}
+
+.error-subject{
+  position: absolute;
+  width: 20vw;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: red;
+  justify-self: flex-start;
+  text-align: right;
+  margin-left: 52%;
+}
+
+.error-message{
+  position: absolute;
+  width: 20vw;
+  margin-top: 3%;
+  color: red;
+  justify-self: flex-start;
+  text-align: right;
+  margin-left: 52%;
+}

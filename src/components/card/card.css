@@ -1,0 +1,112 @@
+.card-container {
+  display: flex;
+  flex-direction: column;
+  width: 13vw;
+  height: 25vh;
+  padding: 10px;
+  align-items: left;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.card-container.light-mode {
+  background-color: #d9d9d9;
+}
+
+.card-container.dark-mode {
+  /* background-color: rgb(184, 169, 204); */
+  background-color: transparent;
+  border: 2px solid #8435c2;
+}
+
+.photo {
+  margin-top: -3vh;
+  width: 13vw;
+  height: 15vh;
+}
+
+.card-footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 7vh;
+  margin-left: 4px;
+}
+
+.title-button {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin-top: -3vh;
+}
+.logo-container {
+  width: 30%;
+  justify-content: center;
+  align-items: flex-end;
+  align-content: flex-end;
+  margin-top: 4vh;
+  height: fit-content;
+}
+.logo {
+  width: 2rem;
+  height: 2rem;
+  margin-left: 2vh;
+}
+
+.title {
+  font-size: small;
+  margin-top: 4vh;
+  margin-bottom: 1vh;
+}
+
+.title.light-mode {
+  color: black;
+}
+
+.title.dark-mode {
+  color: white;
+}
+
+.button {
+  width: auto;
+  font-size: small;
+}
+
+.button.dark-mode {
+  background-color: #8435c2;
+  color: white;
+}
+
+.button.light-mode {
+  background-color: #8435c2;
+  color: white;
+}
+
+.button.dark-mode:focus {
+  outline: 0;
+  background-color: white;
+  color: #8435c2;
+}
+.button.light-mode:focus {
+  outline: 0;
+  background-color: white;
+  color: #8435c2;
+}
+
+.button.dark-mode:hover {
+  outline: 0;
+  background-color: white;
+  color: #8435c2;
+}
+
+.button.light-mode:hover {
+  outline: 0;
+  background-color: white;
+  color: #8435c2;
+}
+
+.button.light-mode:focus {
+  outline: 0;
+  background-color: white;
+  color: #8435c2;
+}

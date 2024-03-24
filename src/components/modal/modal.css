@@ -1,0 +1,92 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    z-index: 1000; /* Ensure overlay is above other content */
+}
+
+.modal-container {
+    position: fixed;
+    top: 2%;
+    left: 8%;
+    width: 80vw;
+    max-width: 90vw; /* Set maximum width for responsiveness */
+    max-height: 90vh; /* Set maximum height for responsiveness */
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds height */
+    background-color: #d9d9d9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+    z-index: 1001; /* Ensure modal is above overlay */
+    opacity: 0; /* Start with opacity 0 */
+    transform: translateY(-100%); /* Start position above its final position */
+    animation: fadeInUp  1.1s ease forwards; /* Apply animation */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes fadeInUp  {
+  from {
+      opacity: 0;
+      transform: translateY(-10%); /* Start from above */
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0); /* End at its final position */
+  }
+}
+
+.modal-container.dark-mode{
+  
+} 
+
+.modal-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.modal-container p{
+  color: black;
+}
+
+.modal-header h3{
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.close-btn {
+    height: 5vh;
+    width: auto;
+    font-size: small;
+  }
+  
+  .close-btn.dark-mode {
+    background-color: #FFB800;
+    color: white;
+  }
+  
+  .close-btn.light-mode {
+    background-color: #FFB800;
+    color: white;
+  }
+.modal-body {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
