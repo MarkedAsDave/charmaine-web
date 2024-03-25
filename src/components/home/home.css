@@ -168,7 +168,6 @@
 
 .dp{
   animation: float 3s infinite;
-  z-index: 999;
   margin-top: 10%;
 }
 

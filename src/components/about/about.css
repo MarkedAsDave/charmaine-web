@@ -71,7 +71,7 @@
 .grid-center{
     height: 75vh;
     width: 3px;
-    background: linear-gradient(45deg, #79D744, #cde258);
+    background-color: #FFB800;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -82,7 +82,7 @@
 .circle{
     width: 15px;
     height: 15px;
-    background-color: #FFB800;
+    background: linear-gradient(45deg, #79D744, #cde258);
     border-radius: 100%;
     opacity: 0; /* Start with opacity 0 */
     transform: translateY(-50px); /* Start position above its final position */
