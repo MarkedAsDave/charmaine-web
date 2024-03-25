@@ -32,7 +32,7 @@
 .name {
   text-align: justify;
   font-weight: bold;
-  height: 10%;
+  height: 5%;
 }
 
 .surname {
@@ -168,6 +168,7 @@
 
 .dp{
   animation: float 3s infinite;
+  z-index: 999;
 
 }
 

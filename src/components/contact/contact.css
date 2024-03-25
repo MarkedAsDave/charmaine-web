@@ -230,7 +230,7 @@
   bottom: 0;
   width: 100vw;
   height: 2%;
-  background-color: #FFB800;
+  background: linear-gradient(90deg, #79D744, #cde258);
   justify-content: center;
   align-items: center;
   color: #000000;
