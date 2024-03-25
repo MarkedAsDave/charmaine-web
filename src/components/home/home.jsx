@@ -3,6 +3,7 @@ import "./home.css";
 import CloudDownloadIcon from "@mui/icons-material/CloudDownload";
 import "../styles/globalstyles.css";
 import charm from "../img/charm.png";
+import building from "../img/building.png"
 
 export default function Home({ isDarkMode, getInTouch }) {
   const handleViewCV = () => {
@@ -55,6 +56,7 @@ export default function Home({ isDarkMode, getInTouch }) {
                 <CloudDownloadIcon fontSize="small" />
               </button>
             </div>
+            <img src={building} alt="building" />
           </div>
         </div>
         <div className="right">
