@@ -6,6 +6,7 @@
   justify-content: center;
   background-color: transparent;
   align-items: center;
+  
 }
 
 .text-h2.light-mode {
@@ -36,11 +37,19 @@
   gap: 8%;
 }
 
+.project{
+  position: absolute;
+  right: 0;
+  margin-right: 10%;
+}
+
+
 .horizontal {
   display: flex;
   flex-direction: row;
   gap: 5%;
 }
+
 
 .view-btn {
   display: flex;
@@ -80,7 +89,7 @@
 
 .view-btn.light-mode:hover {
   color: white;
-  background-color: #FFB800;
+  background: linear-gradient(90deg, #79D744, #cde258);
 }
 
 .view-btn.dark-mode {
