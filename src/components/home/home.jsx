@@ -35,7 +35,7 @@ export default function Home({ isDarkMode, getInTouch }) {
           <div className="content">
             <h1 className="name">CHARMAINE VELEZ</h1>
             <h1 className="surname">ARICAYOS</h1>
-            <p> BACHELOR OR SCIENCE IN CIVIL ENGINEERING (BSCE)</p>
+            <p> BACHELOR OF SCIENCE IN CIVIL ENGINEERING (BSCE)</p>
             <p>
               Hi, I'm Charmaine, your guide to the world of civil engineering
               wonders. Join me as we navigate through the landscapes of

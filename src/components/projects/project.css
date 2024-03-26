@@ -1,5 +1,5 @@
 .project-container {
-  width: 90vw;
+  width: 98.7vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -75,16 +75,21 @@
 .view-btn.light-mode {
   color: black;
   background: linear-gradient(90deg, #79D744, #cde258);
+  box-shadow: 0px 10px 3px 1px rgba(0, 0, 0, 0.1); /* Adjust spread value */
 }
+
 
 .view-btn.light-mode:hover {
   color: white;
   background-color: #FFB800;
 }
+
 .view-btn.dark-mode {
   color: white;
   border: 2px solid #FFB800;
+  box-shadow: 0px 0px 10px 4px rgba(255, 184, 0, 0.5); /* Add glowing effect */
 }
+
 
 .view-btn.dark-mode:hover {
   color: #FFB800;

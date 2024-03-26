@@ -42,7 +42,7 @@
 }
 
 .header{
-    width: 98%;
+    width: 98.7vw;
     position: fixed; /* Changed from absolute to fixed */
     top: 0;
     display: flex;
