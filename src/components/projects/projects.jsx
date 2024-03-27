@@ -14,6 +14,7 @@ import cert3 from "../img/cert3.png";
 import cert4 from "../img/cert4.png";
 import cert5 from "../img/cert5.png";
 import cert6 from "../img/cert6.png";
+import project from "../img/project.png";
 
 export default function Projects({ isDarkMode }) {
   const [showInvitation, setShowInvitation] = useState(false);
@@ -78,7 +79,8 @@ export default function Projects({ isDarkMode }) {
         className={`project-container ${
           isDarkMode ? "dark-mode" : "light-mode"
         }`}
-      >
+      ><img src={project} alt="project" className="project"/>
+      <img src={project} alt="project" className="project1"/>
         <div className="project-content">
           <div className="horizontal">
             <div
