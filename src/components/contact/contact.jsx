@@ -46,53 +46,53 @@ export default function Contact({ isDarkMode }) {
     return pattern.test(email);
   };
 
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   setIsSubmitting(true); // Set submission status to true
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setIsSubmitting(true); // Set submission status to true
 
-  //   let errors = {};
+    let errors = {};
 
-  //   if (formData.fullname.trim() === "") {
-  //     errors.fullname = "Full name is required";
-  //   }
-  //   if (formData.email.trim() === "") {
-  //     errors.email = "Email is required";
-  //   } else if (!validateEmail(formData.email)) {
-  //     errors.email = "Invalid email address";
-  //   }
-  //   if (formData.subject.trim() === "") {
-  //     errors.subject = "Subject is required";
-  //   }
-  //   if (formData.message.trim() === "") {
-  //     errors.message = "Message is required";
-  //   }
+    if (formData.fullname.trim() === "") {
+      errors.fullname = "Full name is required";
+    }
+    if (formData.email.trim() === "") {
+      errors.email = "Email is required";
+    } else if (!validateEmail(formData.email)) {
+      errors.email = "Invalid email address";
+    }
+    if (formData.subject.trim() === "") {
+      errors.subject = "Subject is required";
+    }
+    if (formData.message.trim() === "") {
+      errors.message = "Message is required";
+    }
 
-  //   setFormErrors(errors);
+    setFormErrors(errors);
 
-  //   if (Object.keys(errors).length === 0) {
-  //     axios
-  //       .post("https://darkdave.pythonanywhere.com/api/contact/", formData, {
-  //         headers: {
-  //           "Content-Type": "application/json",
-  //         },
-  //       })
-  //       .then((response) => {
-  //         setFormData({
-  //           fullname: "",
-  //           email: "",
-  //           subject: "",
-  //           message: "",
-  //         });
-  //         setIsSubmitting(false); // Reset submission status after successful submission
-  //       })
-  //       .catch((error) => {
-  //         console.error("Error submitting form:", error);
-  //         setIsSubmitting(false); // Reset submission status after failed submission
-  //       });
-  //   } else {
-  //     setIsSubmitting(false); // Reset submission status if there are errors
-  //   }
-  // };
+    if (Object.keys(errors).length === 0) {
+      axios
+        .post("https://darkdave.pythonanywhere.com/api/contact/", formData, {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        })
+        .then((response) => {
+          setFormData({
+            fullname: "",
+            email: "",
+            subject: "",
+            message: "",
+          });
+          setIsSubmitting(false); // Reset submission status after successful submission
+        })
+        .catch((error) => {
+          console.error("Error submitting form:", error);
+          setIsSubmitting(false); // Reset submission status after failed submission
+        });
+    } else {
+      setIsSubmitting(false); // Reset submission status if there are errors
+    }
+  };
 
   return (
     <>
