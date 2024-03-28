@@ -70,25 +70,25 @@ export default function Contact({ isDarkMode }) {
     setFormErrors(errors);
 
     if (Object.keys(errors).length === 0) {
-      axios
-        .post("https://darkdave.pythonanywhere.com/api/contact/", formData, {
-          headers: {
-            "Content-Type": "application/json",
-          },
-        })
-        .then((response) => {
-          setFormData({
-            fullname: "",
-            email: "",
-            subject: "",
-            message: "",
-          });
-          setIsSubmitting(false); // Reset submission status after successful submission
-        })
-        .catch((error) => {
-          console.error("Error submitting form:", error);
-          setIsSubmitting(false); // Reset submission status after failed submission
-        });
+      // axios
+      //   .post("https://darkdave.pythonanywhere.com/api/contact/", formData, {
+      //     headers: {
+      //       "Content-Type": "application/json",
+      //     },
+      //   })
+      //   .then((response) => {
+      //     setFormData({
+      //       fullname: "",
+      //       email: "",
+      //       subject: "",
+      //       message: "",
+      //     });
+      //     setIsSubmitting(false); // Reset submission status after successful submission
+      //   })
+        // .catch((error) => {
+        //   console.error("Error submitting form:", error);
+        //   setIsSubmitting(false); // Reset submission status after failed submission
+        // });
     } else {
       setIsSubmitting(false); // Reset submission status if there are errors
     }
