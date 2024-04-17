@@ -114,3 +114,48 @@
   color: #FFB800;
   border: 2px solid #79D744;
 }
+
+
+@media (max-width: 480px) {
+
+  .horizontal{
+    display: flex;
+    flex-direction: column;
+  
+  }
+
+  .project-content{
+    height: auto;
+  }
+
+  .project-content {
+    height: fit-content;
+
+  }
+  
+.view-btn {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 30vh;
+  padding: 5px;
+  margin-bottom: 10%;
+
+}
+
+.project-container {
+  height: fit-content;
+}
+
+.project{
+  position: absolute;
+  right: -15vw;
+  margin-right: 5%;
+}
+
+.project1{
+  position: absolute;
+  left: -500vw;
+  margin-right: 5%;
+}
+}

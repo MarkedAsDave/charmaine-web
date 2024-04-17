@@ -147,8 +147,26 @@
 
 
 
-@media (max-width: 768px) {
-    .container {
-        width: 100vw; /* Adjust width for smaller screens */
-    }
+
+@media (max-width: 480px){
+
+  .header-btn-container{
+    visibility: hidden;
+  }
+
+  .container {
+    position: relative;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 98vw;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+ .switch-btn{
+    position: absolute ;
+    right: 0;
+    margin-right: 10px;
+ }
 }

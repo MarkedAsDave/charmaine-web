@@ -85,10 +85,10 @@ export default function Contact({ isDarkMode }) {
       //     });
       //     setIsSubmitting(false); // Reset submission status after successful submission
       //   })
-        // .catch((error) => {
-        //   console.error("Error submitting form:", error);
-        //   setIsSubmitting(false); // Reset submission status after failed submission
-        // });
+      // .catch((error) => {
+      //   console.error("Error submitting form:", error);
+      //   setIsSubmitting(false); // Reset submission status after failed submission
+      // });
     } else {
       setIsSubmitting(false); // Reset submission status if there are errors
     }
@@ -99,7 +99,7 @@ export default function Contact({ isDarkMode }) {
       <div className="contact-container">
         <img src={build} alt="build" className="build" />
         <div className="contact-grid">
-        <div className="up-left">
+          <div className="up-left">
             <div
               className={`up-left-content ${
                 isDarkMode ? "dark-mode" : "light-mode"
@@ -130,7 +130,7 @@ export default function Contact({ isDarkMode }) {
                   <h4>Email</h4>
                 </div>
                 <div className="personal-info-down">
-                  <p>charmaine@gmail.com</p>
+                  <p>charmainearicayos92@gmail.com</p>
                 </div>
               </div>
             </div>
@@ -171,13 +171,12 @@ export default function Contact({ isDarkMode }) {
                     className={`a-icons ${
                       isDarkMode ? "dark-mode" : "light-mode"
                     }`}
-                    href="https://www.linkedin.com/"
+                    href="https://www.linkedin.com/in/charmaine-aricayos-0336b82b7/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <LinkedInIcon />
                   </a>
-                  
                 </div>
               </div>
             </div>
@@ -194,7 +193,7 @@ export default function Contact({ isDarkMode }) {
                   <h4>Phone</h4>
                 </div>
                 <div className="personal-info-down">
-                  <p>+6391231231231</p>
+                  <p>09455725264</p>
                 </div>
               </div>
             </div>

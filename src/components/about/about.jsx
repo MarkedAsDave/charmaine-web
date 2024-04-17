@@ -7,18 +7,34 @@ export default function About({ isDarkMode }) {
       <div className="about-container">
         <h2>About</h2>
         <div className="grid-view">
-        <img src={back} alt="" />
-        <div className="grid-left1">
-            <div className={`left-content1 ${isDarkMode? "dark-mode" : "light-mode"}`}>
+          <img src={back} alt="" />
+          <div className="grid-left1">
+            <div
+              className={`left-content1 ${
+                isDarkMode ? "dark-mode" : "light-mode"
+              }`}
+            >
               <p>2013</p>
             </div>
-            <div className={`left-content1 ${isDarkMode? "dark-mode" : "light-mode"}`}>
+            <div
+              className={`left-content1 ${
+                isDarkMode ? "dark-mode" : "light-mode"
+              }`}
+            >
               <p>2017</p>
             </div>
-            <div className={`left-content1 ${isDarkMode? "dark-mode" : "light-mode"}`}>
+            <div
+              className={`left-content1 ${
+                isDarkMode ? "dark-mode" : "light-mode"
+              }`}
+            >
               <p>2019</p>
             </div>
-            <div className={`left-content1 ${isDarkMode? "dark-mode" : "light-mode"}`}>
+            <div
+              className={`left-content1 ${
+                isDarkMode ? "dark-mode" : "light-mode"
+              }`}
+            >
               <p>2023</p>
             </div>
           </div>
